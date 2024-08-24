@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // marksheet
+        
+    //      let name=prompt("enter name")
+    // let=php=Number(prompt("enter php"))
+    // let=java=Number(prompt("enter java"))
+    // let=python=Number(prompt("enter python"))
+    // let=dsa=Number(prompt("enter dsa"))
+    // let=dld=Number(prompt("enter dld"))
+    // document.write("name:"+name + "<br>" );
+    // document.write("php:"+php + "<br>");
+    // document.write("java:"+java + "<br>");
+    // document.write("python:"+python + "<br>");
+    // document.write("dsa:"+dsa + "<br>");
+    // document.write("dld:"+dld + "<br>");
+    // let obt=php+java+python+dsa+dld
+    // document.write("obtain marks:" +obt + "<br>");
+    // let=per=obt*100/500
+    // document.write("percentage:" +per + "<br>");
+     
+    // if(per>=50 && per<=59){
+    //     document.write("D grade")
+    // }
+    // else if (per>=60  && per<=64){
+    //     document.write("C grade")
+    // }
+    // else if (per>=65 && per<=69){
+    //     document.write("C+ grade ")
+    // }
+    // else if(per>=70 && per<=74){
+    //     document.write("B grade")
+    // }
+    // else if(per>=75 && per<=79){
+    //     document.write("B+ grade")
+    // }
+    // else if(per>=80 && per<=84){
+    //     document.write("A grade")
+    // }
+    // else if (per>=85 && per<=100){
+    //     document.write("A+ grade")
+    // }
+    // else(per<=49)
+    //  { 
+    //       document.write("fail")
+    // }
+
+
+
+// city
+//     let city = prompt("Please enter your city name:");
+// if (city.toLowerCase() === "karachi") {
+//     document.write("Welcome to the city of lights");
+// } else {
+//     document.write("Welcome to " + city);
+// }
+
+
+
+
+// gender
+// let gender = prompt("Please enter your gender (male/female):");
+// if (gender.toLowerCase() === "male") {
+//     document.write("Good Morning Sir.");
+// } else if (gender.toLowerCase() === "female") {
+//     document.write("Good Morning Ma'am.");
+// } else {
+//     document.write("Good Morning!");
+// }
+
+
+
+// traffic light
+// let signalColor = prompt("Please enter the traffic signal color:");
+// if (signalColor.toLowerCase() === "red") {
+//     alert("Must Stop");
+// } else if (signalColor.toLowerCase() === "yellow") {
+//     alert("Ready to move");
+// } else if (signalColor.toLowerCase() === "green") {
+//     alert("Move now");
+// } else {
+//     alert("Invalid color entered. Please enter red, yellow, or green.");
+// }
+
+
+
+// weather message 
+// let temperature= prompt("please enter the temperature");
+//     if (temperature > 40) {
+//         alert("It is too hot outside");
+//     } else if (temperature > 30) {
+//         alert("The Weather today is Normal");
+//     } else if (temperature > 20) {
+//         alert("Today's Weather is cool.");
+//     } else if (temperature > 10) {
+//         alert("  weather is so Cool.");
+//     } else {
+//         alert("It's quite cold outside");
+//     }
+
+
+
+
+function calculate() {
+
+    let num1 = parseFloat(prompt("Enter the first number:"));
+    let num2 = parseFloat(prompt("Enter the second number:"));
+    let operation = prompt("Enter the operation (+, -, *, /, %):");
+
+    let result;
+
+    if (operation === "+") {
+        result = num1 + num2;
+    } else if (operation === "-") {
+        result = num1 - num2;
+    } else if (operation === "*") {
+        result = num1 * num2;
+    } else if (operation === "/") {
+
+        if (num2 !== 0) {
+            result = num1 / num2;
+        } else {
+            result = "Error: Division by zero is not allowed.";
+        }
+    } else if (operation === "%") {
+    
+        if (num2 !== 0) {
+            result = num1 % num2;
+        } else {
+            result = "Error: Modulus by zero is not allowed.";
+        }
+    } else {
+        result = "Error: Invalid operation.";
+    }
+
+    alert("The result is: " + result);
+}
+calculate();
+
+
+
+
+
+    </script>
+</body>
+</html>
